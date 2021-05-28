@@ -1,7 +1,8 @@
-public class Fuente {
+public class Fuente extends Articulo {
 	private int potencia;
 
-	public Fuente(int potencia) {
+	public Fuente(int potencia, double precio) {
+		super(precio);
 		this.potencia = potencia;
 	}
 

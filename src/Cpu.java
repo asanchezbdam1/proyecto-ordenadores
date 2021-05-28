@@ -1,10 +1,10 @@
-public class Cpu {
+public class Cpu extends Articulo {
 	private String modelo;
 	private int frecuencia;
 	private int nucleo;
 
-	public Cpu(String modelo, int frecuencia, int nucleo) {
-
+	public Cpu(String modelo, int frecuencia, int nucleo, double precio) {
+		super(precio);
 		this.modelo = modelo;
 		this.frecuencia = frecuencia;
 		this.nucleo = nucleo;
