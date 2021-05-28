@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Ordenador extends Articulo {
+public class Ordenador {
     private String idOrdenador;
     private PlacaBase placaBase;
     private List<Disco> discos;
@@ -11,8 +11,7 @@ public class Ordenador extends Articulo {
     private Fuente fuente;
     private Torre torre;
 
-    public Ordenador(String usuario, double precio) {
-        super(precio);
+    public Ordenador(String usuario) {
         discos = new ArrayList<>();
         rams = new ArrayList<>();
         gpus = new ArrayList<>();
@@ -117,10 +116,12 @@ public class Ordenador extends Articulo {
 	}
 
 	public void setTorre(Torre torre) {
-		this.torre = torre;
+		if (this.torre != null) {
+			if (torre.getFormatoPlaca() == placaBase.getFormato()) {
+				this.torre = torre;
+			}
+		}
 	}
-	
-	public void setPrecio(double precio) {}
 	
 	public double getPrecio() {
 		return calcularPrecio();
