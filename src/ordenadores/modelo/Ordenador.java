@@ -131,22 +131,31 @@ public class Ordenador {
 
 	@Override
 	public String toString() {
-		String strRam = "";
+		String str = "";
 		for (Ram ram : rams) {
-			strRam = "\n" + ram.toString();
+			str += ram.toString() + "\n";
 		}
 
-		String strDisc = "";
 		for (Disco disco : discos) {
-			strDisc = "\n" + disco.toString();
+			str += disco.toString() + "\n";
 		}
 
-		String strGpu = "";
 		for (Gpu gpu : gpus) {
-			strGpu = "\n" + gpu.toString();
+			str += gpu.toString() + "\n";
 		}
-
-		return getClass().getSimpleName() + " (" + idOrdenador + ")\n" + placaBase.toString() + "\n" + cpu.toString()
-				+ "\n" + strRam + "\n" + strDisc + "\n" + strGpu + "\n" + fuente.toString() + "\n" + torre.toString();
+		if (placaBase != null) {
+			str += placaBase.toString() + "\n";
+		}
+		if (cpu != null) {
+			str += cpu.toString() + "\n";
+		}
+		if (fuente != null) {
+			str += fuente.toString() + "\n";
+		}
+		if (torre != null) {
+			str += torre.toString() + "\n";
+		}
+		
+		return getClass().getSimpleName() + " (" + idOrdenador + ")\n" + str;
 	}
 }

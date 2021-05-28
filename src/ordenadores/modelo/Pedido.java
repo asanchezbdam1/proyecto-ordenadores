@@ -8,6 +8,7 @@ public class Pedido {
     private String usuario;
     
     public Pedido(String usuario) {
+    	this.usuario = usuario;
     	setOrdenador(new Ordenador(usuario));
     	setCantidad(1);
     	setFecha(LocalDateTime.now());
