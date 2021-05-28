@@ -2,6 +2,11 @@ public class Ram {
 	private int capacidad;
 	private TipoRAM tipo;
 
+	public Ram(int capacidad, TipoRAM tipo) {
+		this.capacidad = capacidad;
+		this.tipo = tipo;
+	}
+
 	public int getCapacidad() {
 		return capacidad;
 	}

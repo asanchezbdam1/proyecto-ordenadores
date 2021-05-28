@@ -1,6 +1,10 @@
 public class Fuente {
 	private int potencia;
 
+	public Fuente(int potencia) {
+		this.potencia = potencia;
+	}
+
 	public int getPotencia() {
 		return potencia;
 	}

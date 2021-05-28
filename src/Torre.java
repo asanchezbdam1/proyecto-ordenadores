@@ -7,6 +7,14 @@ public class Torre {
 	private Color color;
 	private FormatoPlaca formatoPlaca;
 
+	public Torre(int altura, int anchura, int longitud, Color color, FormatoPlaca formatoPlaca) {
+		this.altura = altura;
+		this.anchura = anchura;
+		this.longitud = longitud;
+		this.color = color;
+		this.formatoPlaca = formatoPlaca;
+	}
+
 	public int getAltura() {
 		return altura;
 	}

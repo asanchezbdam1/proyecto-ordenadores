@@ -2,6 +2,11 @@ public class Gpu {
 	private String modelo;
 	private int VRAM;
 
+	public Gpu(String modelo, int vRAM) {
+		this.modelo = modelo;
+		VRAM = vRAM;
+	}
+
 	public String getModelo() {
 		return modelo;
 	}

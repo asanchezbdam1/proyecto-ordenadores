@@ -2,6 +2,11 @@ public class Disco {
 	private int capacidad;
 	private TipoDisco tipo;
 
+	public Disco(int capacidad, TipoDisco tipo) {
+		this.capacidad = capacidad;
+		this.tipo = tipo;
+	}
+
 	public int getCapacidad() {
 		return capacidad;
 	}

@@ -4,6 +4,14 @@ public class PlacaBase {
 	private int slotsPCIe;
 	private int socket;
 
+	public PlacaBase(int slotsRAM, FormatoPlaca formato, int slotsPCIe, int socket, int maxRAM) {
+		this.slotsRAM = slotsRAM;
+		this.formato = formato;
+		this.slotsPCIe = slotsPCIe;
+		this.socket = socket;
+		this.maxRAM = maxRAM;
+	}
+
 	public int getSlotsRAM() {
 		return slotsRAM;
 	}

@@ -3,6 +3,13 @@ public class Cpu {
 	private int frecuencia;
 	private int nucleo;
 
+	public Cpu(String modelo, int frecuencia, int nucleo) {
+
+		this.modelo = modelo;
+		this.frecuencia = frecuencia;
+		this.nucleo = nucleo;
+	}
+
 	public String getModelo() {
 		return modelo;
 	}
