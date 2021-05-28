@@ -11,6 +11,10 @@ public class Pedidos {
 		idCliente = System.getProperty("user.name");
 		this.pedidos = new ArrayList<>();
 	}
+	
+	public void addPedido(Pedido p) {
+		this.pedidos.add(p);
+	}
 
 	public String getIdCliente() {
 		return idCliente;
@@ -21,11 +25,15 @@ public class Pedidos {
 	}
 
 	public void modificarPedido(Pedido pedido) {
-
+		
 	}
 	
 	public List<Pedido> getPedidos() {
 		return pedidos;
+	}
+
+	public void removePedido(Pedido p) {
+		this.pedidos.remove(p);
 	}
 
 }
