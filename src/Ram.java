@@ -1,8 +1,9 @@
-public class Ram {
+public class Ram extends Articulo {
 	private int capacidad;
 	private TipoRAM tipo;
 
-	public Ram(int capacidad, TipoRAM tipo) {
+	public Ram(int capacidad, TipoRAM tipo, double precio) {
+		super(precio);
 		this.capacidad = capacidad;
 		this.tipo = tipo;
 	}

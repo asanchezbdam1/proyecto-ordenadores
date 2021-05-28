@@ -1,8 +1,9 @@
-public class Gpu {
+public class Gpu extends Articulo {
 	private String modelo;
 	private int VRAM;
 
-	public Gpu(String modelo, int vRAM) {
+	public Gpu(String modelo, int vRAM, double precio) {
+		super(precio);
 		this.modelo = modelo;
 		VRAM = vRAM;
 	}

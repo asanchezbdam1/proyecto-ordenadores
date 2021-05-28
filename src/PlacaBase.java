@@ -1,10 +1,11 @@
-public class PlacaBase {
+public class PlacaBase extends Articulo {
 	private int slotsRAM;
 	private FormatoPlaca formato;
 	private int slotsPCIe;
 	private int socket;
 
-	public PlacaBase(int slotsRAM, FormatoPlaca formato, int slotsPCIe, int socket, int maxRAM) {
+	public PlacaBase(int slotsRAM, FormatoPlaca formato, int slotsPCIe, int socket, int maxRAM, double precio) {
+		super(precio);
 		this.slotsRAM = slotsRAM;
 		this.formato = formato;
 		this.slotsPCIe = slotsPCIe;

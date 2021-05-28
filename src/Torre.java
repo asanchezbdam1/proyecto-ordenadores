@@ -1,13 +1,14 @@
 import java.awt.Color;
 
-public class Torre {
+public class Torre extends Articulo {
 	private int altura;
 	private int anchura;
 	private int longitud;
 	private Color color;
 	private FormatoPlaca formatoPlaca;
 
-	public Torre(int altura, int anchura, int longitud, Color color, FormatoPlaca formatoPlaca) {
+	public Torre(int altura, int anchura, int longitud, Color color, FormatoPlaca formatoPlaca, double precio) {
+		super(precio);
 		this.altura = altura;
 		this.anchura = anchura;
 		this.longitud = longitud;

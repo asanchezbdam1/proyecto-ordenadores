@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Ordenador {
+public class Ordenador extends Articulo {
     private String idOrdenador;
     private PlacaBase placaBase;
     private List<Disco> discos;
@@ -11,11 +11,9 @@ public class Ordenador {
     private Fuente fuente;
     private Torre torre;
 
-    public Ordenador(String usuario) {
-        discos = new ArrayList<>();
-        rams = new ArrayList<>();
-        gpus = new ArrayList<>();
-        idOrdenador = usuario + java.time.LocalDateTime.now().toString();
+    public Ordenador(String usuario, double precio) {
+        super(precio);
+        idOrdenador = usuario + java.time.LocalDate.now().toString();
     }
 
     public boolean addDisco(Disco disco) {

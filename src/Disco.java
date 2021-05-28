@@ -1,8 +1,9 @@
-public class Disco {
+public class Disco extends Articulo {
 	private int capacidad;
 	private TipoDisco tipo;
 
-	public Disco(int capacidad, TipoDisco tipo) {
+	public Disco(int capacidad, TipoDisco tipo, double precio) {
+		super(precio);
 		this.capacidad = capacidad;
 		this.tipo = tipo;
 	}
