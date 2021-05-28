@@ -1,3 +1,4 @@
+package ordenadores.modelo;
 public class PlacaBase extends Articulo {
 	private int slotsRAM;
 	private FormatoPlaca formato;

@@ -1,3 +1,5 @@
+package ordenadores.modelo;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -6,15 +8,12 @@ public class Pedidos {
 	private List<Pedido> pedidos;
 
 	public Pedidos() {
+		idCliente = System.getProperty("user.name");
 		this.pedidos = new ArrayList<>();
 	}
 
 	public String getIdCliente() {
 		return idCliente;
-	}
-
-	public void setIdCliente(String idCliente) {
-		this.idCliente = idCliente;
 	}
 
 	public void addPedidos(Pedido pedido) {
@@ -23,6 +22,10 @@ public class Pedidos {
 
 	public void modificarPedido(Pedido pedido) {
 
+	}
+	
+	public List<Pedido> getPedidos() {
+		return pedidos;
 	}
 
 }

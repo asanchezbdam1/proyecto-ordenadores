@@ -1,3 +1,4 @@
+package ordenadores.modelo;
 public class Gpu extends Articulo {
 	private String modelo;
 	private int VRAM;

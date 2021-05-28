@@ -1,3 +1,4 @@
+package ordenadores.modelo;
 public class Fuente extends Articulo {
 	private int potencia;
 

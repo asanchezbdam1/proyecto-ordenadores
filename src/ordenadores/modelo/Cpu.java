@@ -1,3 +1,4 @@
+package ordenadores.modelo;
 public class Cpu extends Articulo {
 	private String modelo;
 	private int frecuencia;

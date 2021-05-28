@@ -1,8 +1,9 @@
-public class Disco extends Articulo {
+package ordenadores.modelo;
+public class Ram extends Articulo {
 	private int capacidad;
-	private TipoDisco tipo;
+	private TipoRAM tipo;
 
-	public Disco(int capacidad, TipoDisco tipo, double precio) {
+	public Ram(int capacidad, TipoRAM tipo, double precio) {
 		super(precio);
 		this.capacidad = capacidad;
 		this.tipo = tipo;
@@ -16,11 +17,11 @@ public class Disco extends Articulo {
 		this.capacidad = capacidad;
 	}
 
-	public TipoDisco getTipo() {
+	public TipoRAM getTipo() {
 		return tipo;
 	}
 
-	public void setTipo(TipoDisco tipo) {
+	public void setTipo(TipoRAM tipo) {
 		this.tipo = tipo;
 	}
 }

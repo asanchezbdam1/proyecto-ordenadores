@@ -1,3 +1,4 @@
+package ordenadores.modelo;
 import java.awt.Color;
 
 public class Torre extends Articulo {
