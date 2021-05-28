@@ -1,4 +1,5 @@
 package ordenadores.modelo;
+
 public class Gpu extends Articulo {
 	private String modelo;
 	private int VRAM;
@@ -23,5 +24,11 @@ public class Gpu extends Articulo {
 
 	public void setVRAM(int vRAM) {
 		VRAM = vRAM;
+	}
+
+	@Override
+	public String toString() {
+		return getClass().getSimpleName() + "\tModelo: " + modelo + "\tVRAM: " + VRAM + "\t" + super.toString();
+
 	}
 }

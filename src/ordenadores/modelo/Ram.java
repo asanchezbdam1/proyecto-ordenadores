@@ -1,4 +1,5 @@
 package ordenadores.modelo;
+
 public class Ram extends Articulo {
 	private int capacidad;
 	private TipoRAM tipo;
@@ -23,5 +24,11 @@ public class Ram extends Articulo {
 
 	public void setTipo(TipoRAM tipo) {
 		this.tipo = tipo;
+	}
+
+	@Override
+	public String toString() {
+		return getClass().getSimpleName() + "\tTipo: " + tipo + "\tCapacidad: " + capacidad + "\t" + super.toString();
+
 	}
 }

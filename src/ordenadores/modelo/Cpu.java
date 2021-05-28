@@ -1,4 +1,5 @@
 package ordenadores.modelo;
+
 public class Cpu extends Articulo {
 	private String modelo;
 	private int frecuencia;
@@ -34,4 +35,11 @@ public class Cpu extends Articulo {
 	public void setNucleo(int nucleo) {
 		this.nucleo = nucleo;
 	}
+
+	@Override
+	public String toString() {
+		return getClass().getSimpleName() + "\tModelo: " + modelo + "\tFrecuencia: " + frecuencia + "\tNúcleo: "
+				+ nucleo + "\t" + super.toString();
+	}
+
 }

@@ -1,4 +1,5 @@
 package ordenadores.modelo;
+
 import java.awt.Color;
 
 public class Torre extends Articulo {
@@ -55,5 +56,12 @@ public class Torre extends Articulo {
 
 	public void setFormatoPlaca(FormatoPlaca formatoPlaca) {
 		this.formatoPlaca = formatoPlaca;
+	}
+
+	@Override
+	public String toString() {
+		return getClass().getSimpleName() + "\tFormato placa: " + formatoPlaca + "\tAltura: " + altura + "\tAnchura: "
+				+ anchura + "\tLongitud: " + longitud + "\tColor: " + color + "\t" + super.toString();
+
 	}
 }

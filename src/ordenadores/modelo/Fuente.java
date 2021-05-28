@@ -1,4 +1,5 @@
 package ordenadores.modelo;
+
 public class Fuente extends Articulo {
 	private int potencia;
 
@@ -13,5 +14,11 @@ public class Fuente extends Articulo {
 
 	public void setPotencia(int potencia) {
 		this.potencia = potencia;
+	}
+
+	@Override
+	public String toString() {
+		return getClass().getSimpleName() + "\tPotencia: " + potencia + "\t" + super.toString();
+
 	}
 }

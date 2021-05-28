@@ -1,4 +1,5 @@
 package ordenadores.modelo;
+
 public class Disco extends Articulo {
 	private int capacidad;
 	private TipoDisco tipo;
@@ -23,5 +24,11 @@ public class Disco extends Articulo {
 
 	public void setTipo(TipoDisco tipo) {
 		this.tipo = tipo;
+	}
+
+	@Override
+	public String toString() {
+		return getClass().getSimpleName() + "\tTipo: " + tipo + "\tCapacidad: " + capacidad + "\t" + super.toString();
+
 	}
 }

@@ -1,9 +1,11 @@
 package ordenadores.modelo;
+
 public class PlacaBase extends Articulo {
 	private int slotsRAM;
 	private FormatoPlaca formato;
 	private int slotsPCIe;
 	private int socket;
+	private int maxRAM;
 
 	public PlacaBase(int slotsRAM, FormatoPlaca formato, int slotsPCIe, int socket, int maxRAM, double precio) {
 		super(precio);
@@ -54,6 +56,11 @@ public class PlacaBase extends Articulo {
 		this.maxRAM = maxRAM;
 	}
 
-	private int maxRAM;
+	@Override
+	public String toString() {
+		return getClass().getSimpleName() + "\tFormato: " + formato + "\tSlots RAM: " + slotsRAM + "\tSlots PCIe: "
+				+ slotsPCIe + "\tSocket: " + socket + "\tMax RAM: " + maxRAM + "\t" + super.toString();
+
+	}
 
 }
