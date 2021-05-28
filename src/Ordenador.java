@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public class Ordenador {
@@ -11,15 +12,34 @@ public class Ordenador {
     private Torre torre;
 
     public Ordenador(String usuario) {
-        idOrdenador = usuario + java.time.LocalDate.now().toString();
+        discos = new ArrayList<>();
+        rams = new ArrayList<>();
+        gpus = new ArrayList<>();
+        idOrdenador = usuario + java.time.LocalDateTime.now().toString();
     }
 
     public boolean addDisco(Disco disco) {
-        return false;
+        discos.add(disco);
+        return true;
     }
 
     public boolean addRam(Ram ram) {
+        if (placaBase.getSlotsRAM() > rams.size()) {
+            int disponible = placaBase.getMaxRAM() - getTotalRam();
+            if (disponible >= ram.getCapacidad()) {
+                rams.add(ram);
+                return true;
+            }
+        }
         return false;
+    }
+
+    private int getTotalRam() {
+        int n = 0;
+        for (Ram ram : rams) {
+            n += ram.getCapacidad();
+        }
+        return n;
     }
 
     public boolean addGpu(Gpu gpu) {
@@ -36,5 +56,9 @@ public class Ordenador {
 
     public void removeRam(Ram ram) {
 
+    }
+
+    public double calcularPrecio() {
+        return 0;
     }
 }
